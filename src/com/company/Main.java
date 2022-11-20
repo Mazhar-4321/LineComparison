@@ -16,20 +16,6 @@ public class Main {
         String isEqual = "not equal";
         if (Double.compare(x1, y1) == 0 && Double.compare(x2, y2) == 0) {
             isEqual = "equal";
-        } else {
-            if (Double.compare(x1, y1) > 0) {
-                isEqual = "Line 1 is greater then Line 2";
-            } else {
-                if (Double.compare(x1, y1) < 0) {
-                    isEqual = "Line 2 is greater then Line 1";
-                } else {
-                    if (Double.compare(x2, y2) > 0) {
-                        isEqual = "Line 1 is greater then Line 2";
-                    } else {
-                        isEqual = "Line 2 is greater than Line 1";
-                    }
-                }
-            }
         }
         System.out.println(isEqual);
     }
