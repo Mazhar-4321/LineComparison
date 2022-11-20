@@ -14,6 +14,6 @@ public class Main {
         Double y2=scanner.nextDouble();
         Double length=Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
         System.out.println("length="+length);
-        System.out.println("hi");
+        System.out.println("hi ");
     }
 }
