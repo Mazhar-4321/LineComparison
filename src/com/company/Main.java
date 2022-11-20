@@ -17,8 +17,22 @@ public class Main {
         String isEqual = "not equal";
         if (x1.equals(y1) && x2.equals(y2)) {
             isEqual = "equal";
+        } else {
+            if (Double.compare(x1, y1) > 0) {
+                isEqual = "Line 1 is greater then Line 2";
+            } else {
+                if (Double.compare(x1, y1) < 0) {
+                    isEqual = "Line 2 is greater then Line 1";
+                } else {
+                    if (Double.compare(x2, y2) > 0) {
+                        isEqual = "Line 1 is greater then Line 2";
+                    } else {
+                        isEqual = "Line 2 is greater than Line 1";
+                    }
+                }
+            }
         }
-        System.out.println("Two Lines are " + isEqual);
+        System.out.println(isEqual);
 
     }
 }
